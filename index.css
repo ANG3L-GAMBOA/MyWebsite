@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 1rem; */
+  background: #ffffff;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.links {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+.links a {
+  padding-right: 10px;
+}
+
+a:hover {
+  color: #ffec64;
+}
+
+a {
+  text-decoration: none;
+  color: #793eaa;
+}
+
+.container {
+  padding-top: 0.7rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: #ffffff;
+}
+.img-container {
+  width: 25vmin;
+  min-height: 35vmin;
+  border: 1px solid #9c9c83;
+}
+
+.tribute-container {
+  padding-top: 5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  /* width: calc(100vw / 2.2); */
+  width: 80vmin;
+  /* height: 300px; */
+  overflow: hidden;
+  margin-top: 25px;
+  background: linear-gradient(-40deg, #ff85e7, #fff0fc);
+  display: flex;
+  padding: 1rem;
+}
+
+.title {
+  padding-top: 100px;
+  color: #000;
+  text-align: center;
+}
+
+.tribute-title {
+  margin-top: 5px;
+}
+
+.img-container {
+  min-width: 35vmin;
+  min-height: 35vmin;
+  border: 1px solid #9c9c83;
+}
+
+.button {
+  width: 125px;
+  height: 15px;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  border-radius: 42px;
+  border: 1px solid #ffaa22;
+  cursor: pointer;
+  color: #333333;
+  font-size: 17px;
+  padding: 15px 47px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #eef0ad;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+}
+/* .button:active {
+  position: relative;
+  top: 1px;
+} */
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px #a8a8a8;
+}
+
+.content {
+  margin-left: 2vmin;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* background-image: url("/images/Diana.jpg");
+background-repeat: no-repeat;
+background-size: 50vw;
+object-fit: fit;
+background-position: 80% 20%; */
+
+#introduction {
+  width: 40%;
+
+  text-align: center;
+}
+
+#introduction h1 {
+  color: #793eaa;
+  font-size: 5vmin;
+}
+
+#introduction a {
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.logo h4 {
+  background: linear-gradient(45deg, #fa1e0e 30%, #793eaa 65% 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wide-card {
+  width: 100%;
+  padding-bottom: 5vmin;
+  padding-top: 5vmin;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wide-card h2 {
+  padding: 0 5% 0 0;
+  text-align: justify;
+  line-height: 35px;
+}
+
+.profile-container {
+  position: absolute;
+  padding: 5% 10%;
+  top: 80px;
+}
+
+#diana {
+  max-width: 60%;
+  object-fit: fill;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip-text {
+  position: absolute;
+  visibility: hidden;
+  width: 100px;
+  background: #ffabe1;
+  color: #793eaa;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  z-index: 1;
+  top: 110%;
+  left: 75%;
+  margin-left: -60px;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ffabe1 transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.social-icon {
+  width: 7vmin !important;
+}
+
+.social-icon:hover {
+  filter: invert(100%);
+  /* filter: hue-rotate(90 deg); */
+}
+
+.ProjectDate {
+  text-align: right;
+}
+
+.divider {
+  width: 100%;
+  height: 10px;
+  background-image: url("/images/flower-Line.png");
+}
+
+.heart {
+  width: 40%;
+}
+
+.tribute-desc {
+  text-align: center;
+  padding: 8vmin 30vmin 0 30vmin;
+}
+
+@media only screen and (max-width: 1260px) {
+  .wide-card {
+    font-size: 1.3vmin;
+  }
+
+  .tribute-desc {
+    text-align: center;
+    padding: 8vmin 15vmin 0 15vmin;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .wide-card {
+    display: block;
+    text-align: center;
+    font-size: 2vmin;
+  }
+  .wide-card h2 {
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #diana {
+    max-width: 100%;
+  }
+  #introduction {
+    width: 100%;
+    margin-top: 13%;
+  }
+
+  .heart {
+    width: 60%;
+  }
+  .links {
+    font-size: 3vmin;
+    padding-top: 15px;
+  }
+  .logo {
+    font-size: 15px;
+  }
+  .button {
+    /* width: 90px; */
+    height: 10px;
+    font-size: 13px;
+    padding: 15px 18px;
+    text-align: center;
+  }
+  .content p {
+    font-size: 2vmin;
+  }
+
+  .content h1 {
+    font-size: 5vmin;
+    margin-bottom: 10px;
+  }
+  .tribute-desc {
+    padding: 10vmin 2vmin 0 2vmin;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #introduction {
+    margin-top: 18%;
+  }
+
+  .profile-container {
+    padding: 0 5%;
+  }
+
+  .wide-card div img {
+    width: 95%;
+  }
+
+  .wide-card {
+    padding-top: 0;
+  }
+
+  .nav {
+    height: 40px;
+  }
+
+  .wide-card h2 {
+    margin: 10px 0;
+  }
+}
