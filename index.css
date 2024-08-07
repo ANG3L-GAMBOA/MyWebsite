@@ -1,3 +1,14 @@
+body {
+  background-color: #f0f0f0; /* Fondo claro por defecto */
+  color: #333;
+}
+
+body.dark-theme {
+  background-color: #222;
+  color: #fff;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +86,7 @@ a {
   /* height: 300px; */
   overflow: hidden;
   margin-top: 25px;
-  background: linear-gradient(-40deg, #ff85e7, #fff0fc);
+  background: linear-gradient(-40deg, #800020, #fff0fc);
   display: flex;
   padding: 1rem;
 }
